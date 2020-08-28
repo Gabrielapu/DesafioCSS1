@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+@include phone {
+    .container {
+        display: block;
+    }
+}
+
+@include desktop {
+    .container{
+        background-color: green;
+    }
+}

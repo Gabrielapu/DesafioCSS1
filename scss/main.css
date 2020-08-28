@@ -1,0 +1,44 @@
+html, body {
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 375px) {
+  .container {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    background-color: green;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.icon-twitter {
+  width: 400px;
+  height: 100px;
+  background-image: url("/images/icon-twitter.svg");
+}
+
+.icon-share {
+  width: 400px;
+  height: 100px;
+  background-image: url("/images/icon-share.svg");
+}
+/*# sourceMappingURL=main.css.map */
