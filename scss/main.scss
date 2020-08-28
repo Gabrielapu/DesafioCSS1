@@ -1,8 +1,10 @@
 @import 'abstracts/variables';
 @import 'abstracts/breakpoints';
-@import 'abstracts/functions';
-@import 'base/typography';
-@import 'pages/home';
-@import 'layout/footer';
 @import 'abstracts/mixins';
+
+@import 'base/typography';
 @import 'base/icons';
+
+@import 'pages/home';
+
+@import 'layout/footer';
