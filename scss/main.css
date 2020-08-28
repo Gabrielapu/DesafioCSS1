@@ -4,15 +4,27 @@ html, body {
 }
 
 .icon-twitter {
-  width: multiplicar(20, 20);
-  height: 100px;
+  width: 32px;
+  height: 32px;
   background-image: url("/images/icon-twitter.svg");
 }
 
 .icon-share {
-  width: multiplicar(20, 20);
-  height: 100px;
+  width: 32px;
+  height: 32px;
   background-image: url("/images/icon-share.svg");
+}
+
+.icon-pinterest {
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/icon-pinterest.svg");
+}
+
+.icon-facebook {
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/icon-facebook.svg");
 }
 
 .container {
@@ -21,18 +33,17 @@ html, body {
   display: flex;
 }
 
-@media (min-width: 375px) {
-  .container {
-    display: block;
-  }
+/* @include phone {
+    .container {
+        display: block;
+    }
 }
 
-@media (max-width: 1440px) {
-  .container {
-    background-color: green;
-  }
-}
-
+@include desktop {
+    .container{
+        background-color: green;
+    }
+} */
 .attribution {
   font-size: 11px;
   text-align: center;

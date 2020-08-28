@@ -1,7 +1,5 @@
-
 $mobile: 375px;
 $desktop: 1440px;
-
 
 @mixin phone {
     @media (min-width: $mobile){

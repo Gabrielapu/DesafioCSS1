@@ -1,7 +1,7 @@
 @mixin icon($path, $name) {
     #{'.icon-' + $name} {
-        width: multiplicar(20, 20);
-        height: 100px;
+        width: 32px;
+        height: 32px;
         background-image: url('/images/' + $path);
     }
 }
