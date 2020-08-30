@@ -1,4 +1,9 @@
 html, body {
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
+    background-color: $quaternary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
 }

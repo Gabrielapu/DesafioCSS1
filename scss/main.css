@@ -1,6 +1,20 @@
 html, body {
   font-size: 13px;
   font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .icon-twitter {
@@ -27,10 +41,83 @@ html, body {
   background-image: url("/images/icon-facebook.svg");
 }
 
-.container {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 170px;
+  margin-top: 170px;
+  margin-right: 130px;
+  margin-left: 130px;
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+  height: 240px;
+}
+
+.card__image {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card__body {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.name, .date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card__title, .name {
+  color: #48556a;
+}
+
+.date {
+  color: #9eafc2;
+}
+
+.card__subtitle {
+  color: #6d7f97;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.icon-share {
+  background-repeat: no-repeat;
 }
 
 /* @include phone {

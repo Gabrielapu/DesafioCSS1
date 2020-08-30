@@ -1,5 +1,97 @@
-.container {
+.card {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 170px;
+    margin-top: 170px;
+    margin-right: 130px;
+    margin-left: 130px;
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    height: 240px;;
+}
+.card__image {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card__body {
+    margin-right: 40px;
+    margin-left:  40px;
+}
+.name, .date {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card__title, .name {
+    color: $primary-color;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.date {
+    color: $tertiary-color;
+}
+
+.card__subtitle {
+    color: $secondary-color; 
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__author {
+    display: flex;
+}
+
+.card__avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.icon-share {
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+}
+
+.icon-share.top .tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: -60px;
+    bottom: 150%;
+    left: 50%;
+}
+.icon-share.top .tiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    margin-left: -5px;
+    top: 100%;
+    left: 50%;
+    border-color: #2E2E2E transparent transparent transparent;
+}
+.icon-share:hover .tiptext {
+    visibility: visible;
 }
 
 /* @include phone {
