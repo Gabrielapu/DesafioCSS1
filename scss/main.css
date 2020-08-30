@@ -81,6 +81,8 @@ html, body {
 
 .card__title, .name {
   color: #48556a;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .date {
@@ -118,6 +120,40 @@ html, body {
 
 .icon-share {
   background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-share.top .tiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #48556a;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-left: -60px;
+  bottom: 150%;
+  left: 50%;
+}
+
+.icon-share.top .tiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  margin-left: -5px;
+  top: 100%;
+  left: 50%;
+  border-color: #2E2E2E transparent transparent transparent;
+}
+
+.icon-share:hover .tiptext {
+  visibility: visible;
 }
 
 /* @include phone {
